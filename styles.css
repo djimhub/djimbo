@@ -1,0 +1,79 @@
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif; /* Choix de la police */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fond de la page */
+}
+
+/* Entête du site */
+header {
+    background-color: #3498db; /* Couleur bleue */
+    color: white;              /* Texte en blanc */
+    padding: 20px;
+    text-align: center;        /* Texte centré */
+}
+
+/* Titres principaux des albums */
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Titres des sections d'albums */
+.album h2 {
+    font-size: 28px;
+    color: #2c3e50;   /* Couleur de texte foncée */
+    margin-bottom: 20px;
+    text-align: center; /* Centrer le titre */
+}
+
+/* Conteneur principal des albums */
+main {
+    padding: 20px;
+}
+
+/* Conteneur de chaque album */
+.album {
+    margin-bottom: 40px;
+}
+
+/* Conteneur des photos */
+.photos {
+    display: flex;
+    flex-wrap: wrap;  /* Permet de faire passer les images sur plusieurs lignes */
+    gap: 20px;        /* Espacement entre les images */
+    justify-content: center; /* Centre les images dans l'espace disponible */
+}
+
+/* Style des images */
+.photos img {
+    max-width: 300px;      /* Les images ne dépasseront pas 300px de largeur */
+    height: auto;          /* Conserver les proportions des images */
+    border-radius: 10px;   /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: transform 0.3s ease; /* Animation pour le survol */
+    object-fit: cover;     /* Ajuste l'image pour remplir le cadre sans déformation */
+}
+
+/* Effet au survol des images (agrandissement léger) */
+.photos img:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille de l'image au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style pour le texte dans le footer */
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

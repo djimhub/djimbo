@@ -1,77 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Crimson+Text&display=swap');
-
+/* Corps de la page */
 body {
+    background-color: #4b1c1c; /* Rouge bordeaux foncé */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-grain.png'); /* Texture légère de grain */
+    background-size: cover; /* Couvre toute la page */
+    background-blend-mode: multiply; /* Mélange la couleur de fond avec la texture */
+    color: #e5e5e5; /* Texte clair pour contraster */
+    font-family: 'Cinzel', serif; /* Police gothique élégante */
     margin: 0;
     padding: 0;
-    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), #f3efe0; /* fond parchemin */
-    color: #3b2f2f;
-    font-family: 'Crimson Text', serif;
+    height: 100%;
 }
 
-header {
-    background-color: #7e1c1c;
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 6px double #c4a484;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+/* Les titres principaux (h1, h2) */
+h1, h2 {
+    font-family: 'Cinzel', serif; /* Police gothique */
+    color: #fff; /* Texte blanc pour contraster */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Ombre noire pour accentuer l'effet dramatique */
 }
 
-header h1 {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 54px;
-    color: #f3efe0;
-    margin: 0;
-    text-shadow: 2px 2px #000;
+/* Liens */
+a {
+    color: #f2a1a1; /* Rouge pâle pour les liens */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-main {
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
+a:hover {
+    color: #e5e5e5; /* Changer la couleur des liens au survol */
 }
 
+/* Section de l'album */
 .album {
-    background-color: #fdf6e3;
-    border: 3px solid #a36b4f;
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 50px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #e5e5e5; /* Bordure claire pour délimiter les sections */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent pour chaque section */
+    border-radius: 8px;
 }
 
 .album h2 {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 32px;
-    color: #7e1c1c;
-    border-bottom: 2px dashed #a36b4f;
-    margin-bottom: 20px;
+    color: #f2a1a1; /* Titre de l'album en rouge clair */
+    font-size: 24px;
     text-align: center;
 }
 
-.photos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
+/* Images des albums */
 .photos img {
-    width: 240px;
-    border: 5px ridge #c4a484;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Ombre autour des images */
     transition: transform 0.3s ease;
 }
 
 .photos img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(100, 20, 20, 0.4);
+    transform: scale(1.05); /* Zoom subtil au survol */
 }
 
+/* Footer */
 footer {
-    background-color: #3b2f2f;
-    color: #ddd;
     text-align: center;
-    padding: 25px 10px;
-    font-family: 'Crimson Text', serif;
-    border-top: 6px double #c4a484;
+    padding: 10px;
+    background-color: #333;
+    color: #e5e5e5;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
 }
+

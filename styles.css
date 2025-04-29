@@ -1,75 +1,79 @@
 /* Style général du site */
 body {
-    font-family: Arial, sans-serif; /* Choix de la police */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5; /* Fond de la page */
+    background-color: #fdf3f3; /* Fond légèrement rosé */
 }
 
 /* Entête du site */
 header {
-    background-color: #3498db; /* Couleur bleue */
-    color: white;              /* Texte en blanc */
-    padding: 20px;
-    text-align: center;        /* Texte centré */
+    background-color: #c0392b; /* Rouge profond */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Titres principaux des albums */
+/* Titre principal */
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 /* Titres des sections d'albums */
 .album h2 {
     font-size: 28px;
-    color: #2c3e50;   /* Couleur de texte foncée */
+    color: #c0392b;
     margin-bottom: 20px;
-    text-align: center; /* Centrer le titre */
+    text-align: center;
+    border-bottom: 2px solid #c0392b;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 /* Conteneur principal des albums */
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 /* Conteneur de chaque album */
 .album {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* Conteneur des photos */
 .photos {
     display: flex;
-    flex-wrap: wrap;  /* Permet de faire passer les images sur plusieurs lignes */
-    gap: 20px;        /* Espacement entre les images */
-    justify-content: center; /* Centre les images dans l'espace disponible */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* Style des images */
 .photos img {
-    max-width: 300px;      /* Les images ne dépasseront pas 300px de largeur */
-    height: auto;          /* Conserver les proportions des images */
-    border-radius: 10px;   /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
-    transition: transform 0.3s ease; /* Animation pour le survol */
-    object-fit: cover;     /* Ajuste l'image pour remplir le cadre sans déformation */
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
 }
 
-/* Effet au survol des images (agrandissement léger) */
+/* Effet au survol des images */
 .photos img:hover {
-    transform: scale(1.05); /* Légère augmentation de la taille de l'image au survol */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Pied de page */
 footer {
-    background-color: #3498db;
+    background-color: #c0392b;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 10px;
+    margin-top: 40px;
 }
 
 /* Style pour le texte dans le footer */
@@ -77,3 +81,4 @@ footer p {
     margin: 0;
     font-size: 16px;
 }
+

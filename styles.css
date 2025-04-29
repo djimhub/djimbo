@@ -1,49 +1,53 @@
-/* Style général du site */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Crimson+Text&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf3f3; /* Fond légèrement rosé */
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), #f3efe0; /* fond parchemin */
+    color: #3b2f2f;
+    font-family: 'Crimson Text', serif;
 }
 
-/* Entête du site */
 header {
-    background-color: #c0392b; /* Rouge profond */
-    color: white;
-    padding: 30px 20px;
+    background-color: #7e1c1c;
+    padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 6px double #c4a484;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Titre principal */
-h1 {
-    font-size: 40px;
+header h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 54px;
+    color: #f3efe0;
     margin: 0;
-    letter-spacing: 1px;
+    text-shadow: 2px 2px #000;
 }
 
-/* Titres des sections d'albums */
-.album h2 {
-    font-size: 28px;
-    color: #c0392b;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #c0392b;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Conteneur principal des albums */
 main {
     padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Conteneur de chaque album */
 .album {
+    background-color: #fdf6e3;
+    border: 3px solid #a36b4f;
+    border-radius: 15px;
+    padding: 25px;
     margin-bottom: 50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
-/* Conteneur des photos */
+.album h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 32px;
+    color: #7e1c1c;
+    border-bottom: 2px dashed #a36b4f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .photos {
     display: flex;
     flex-wrap: wrap;
@@ -51,34 +55,23 @@ main {
     justify-content: center;
 }
 
-/* Style des images */
 .photos img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover;
+    width: 240px;
+    border: 5px ridge #c4a484;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-/* Effet au survol des images */
 .photos img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(100, 20, 20, 0.4);
 }
 
-/* Pied de page */
 footer {
-    background-color: #c0392b;
-    color: white;
+    background-color: #3b2f2f;
+    color: #ddd;
     text-align: center;
-    padding: 15px 10px;
-    margin-top: 40px;
+    padding: 25px 10px;
+    font-family: 'Crimson Text', serif;
+    border-top: 6px double #c4a484;
 }
-
-/* Style pour le texte dans le footer */
-footer p {
-    margin: 0;
-    font-size: 16px;
-}
-

@@ -1,11 +1,12 @@
-/* Corps de la page */
+/* Corps de la page */ 
 body {
-    background-color: #4b1c1c; /* Rouge bordeaux foncé */
-    background-image: url('https://www.transparenttextures.com/patterns/wood-grain.png'); /* Texture légère de grain */
-    background-size: cover; /* Couvre toute la page */
-    background-blend-mode: multiply; /* Mélange la couleur de fond avec la texture */
-    color: #e5e5e5; /* Texte clair pour contraster */
-    font-family: 'Cinzel', serif; /* Police gothique élégante */
+    background-color: #1b0f0f; /* Rouge noir profond */
+    background-image: url('https://www.publicdomainpictures.net/pictures/40000/velka/gothic-background.jpg'); /* Fond gothique */
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: #e5e5e5;
+    font-family: 'UnifrakturCook', cursive;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -13,33 +14,33 @@ body {
 
 /* Les titres principaux (h1, h2) */
 h1, h2 {
-    font-family: 'Cinzel', serif; /* Police gothique */
-    color: #fff; /* Texte blanc pour contraster */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Ombre noire pour accentuer l'effet dramatique */
+    font-family: 'UnifrakturCook', cursive;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* Liens */
 a {
-    color: #f2a1a1; /* Rouge pâle pour les liens */
+    color: #f2a1a1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #e5e5e5; /* Changer la couleur des liens au survol */
+    color: #e5e5e5;
 }
 
 /* Section de l'album */
 .album {
     margin: 20px;
     padding: 20px;
-    border: 2px solid #e5e5e5; /* Bordure claire pour délimiter les sections */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent pour chaque section */
+    border: 2px solid #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond plus sombre */
     border-radius: 8px;
 }
 
 .album h2 {
-    color: #f2a1a1; /* Titre de l'album en rouge clair */
+    color: #f2a1a1;
     font-size: 24px;
     text-align: center;
 }
@@ -50,21 +51,20 @@ a:hover {
     max-width: 300px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Ombre autour des images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease;
 }
 
 .photos img:hover {
-    transform: scale(1.05); /* Zoom subtil au survol */
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #111;
     color: #e5e5e5;
-    font-family: 'Cinzel', serif;
+    font-family: 'UnifrakturCook', cursive;
     margin-top: 20px;
 }
-

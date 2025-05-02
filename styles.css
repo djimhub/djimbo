@@ -1,70 +1,73 @@
-/* Corps de la page */ 
-body {
-    background-color: #1b0f0f; /* Rouge noir profond */
-    background-image: url('https://www.publicdomainpictures.net/pictures/40000/velka/gothic-background.jpg'); /* Fond gothique */
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    color: #e5e5e5;
+/* Police du titre */
+h1 {
     font-family: 'UnifrakturCook', cursive;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-/* Les titres principaux (h1, h2) */
-h1, h2 {
-    font-family: 'UnifrakturCook', cursive;
-    color: #fff;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-}
-
-/* Liens */
-a {
-    color: #f2a1a1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #e5e5e5;
-}
-
-/* Section de l'album */
-.album {
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #e5e5e5;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond plus sombre */
-    border-radius: 8px;
-}
-
-.album h2 {
-    color: #f2a1a1;
-    font-size: 24px;
     text-align: center;
+    font-size: 3em;
+    color: #4b2e00;
+    margin-top: 30px;
 }
 
-/* Images des albums */
+/* Mise en page de base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fef9f0;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #fff3d6;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres des albums */
+.album h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2em;
+    color: #5a3d1c;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Conteneur de photos avec effet parchemin */
+.photos {
+    background: url('realistic-open-parchment-scroll-transparent_107791-19331.avif') no-repeat center center;
+    background-size: cover;
+    padding: 25px;
+    border: 4px solid #d2b48c;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* Style des images */
 .photos img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    transition: transform 0.3s ease;
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
 .photos img:hover {
     transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Footer */
+/* Pied de page */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #111;
-    color: #e5e5e5;
+    padding: 15px;
+    background-color: #fff3d6;
+    color: #5a3d1c;
     font-family: 'UnifrakturCook', cursive;
-    margin-top: 20px;
+    font-size: 1.2em;
+    margin-top: 40px;
 }

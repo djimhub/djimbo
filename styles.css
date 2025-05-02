@@ -1,83 +1,77 @@
-/* Police + base */
+/* Corps de la page */
 body {
+    background-color: #4b1c1c; /* Rouge bordeaux foncé */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-grain.png'); /* Texture légère de grain */
+    background-size: cover; /* Couvre toute la page */
+    background-blend-mode: multiply; /* Mélange la couleur de fond avec la texture */
+    color: #e5e5e5; /* Texte clair pour contraster */
+    font-family: 'UnifrakturCook', cursive; /* Police gothique élégante */
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1c1a17;
-    background-image: url("https://www.transparenttextures.com/patterns/old-wall.png"); /* texture mur sombre */
-    color: #f8f4e3;
-    padding: 20px;
+    padding: 0;
+    height: 100%;
 }
 
-h1 {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #f4e9d8;
-    text-shadow: 2px 2px #000;
+/* Les titres principaux (h1, h2) */
+h1, h2 {
+    font-family: 'UnifrakturCook', cursive; /* Police gothique */
+    color: #fff; /* Texte blanc pour contraster */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Ombre noire pour accentuer l'effet dramatique */
 }
 
+/* Liens */
+a {
+    color: #f2a1a1; /* Rouge pâle pour les liens */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e5e5e5; /* Changer la couleur des liens au survol */
+}
+
+/* Section de l'album */
 .album {
-    margin-bottom: 60px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #e5e5e5; /* Bordure claire pour délimiter les sections */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent pour chaque section */
+    border-radius: 8px;
 }
 
 .album h2 {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 2em;
-    margin-bottom: 15px;
+    color: #f2a1a1; /* Titre de l'album en rouge clair */
+    font-size: 24px;
     text-align: center;
-    color: #e2c98d;
-    text-shadow: 1px 1px #000;
 }
 
-/* Parchemin avec effet bords brûlés */
+/* Images des albums */
 .photos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 40px;
-    background-image: url("realistic-open-parchment-scroll-transparent_107791-19331.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 6px solid #2b1c0e;
-    border-radius: 20px;
-    box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.7), inset 0 0 25px rgba(0, 0, 0, 0.5);
-    max-width: 1000px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Photos bien contenues */
 .photos img {
-    max-width: 100%;
-    max-height: 250px;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Ombre autour des images */
+    transition: transform 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .photos img {
-        max-height: 180px;
-    }
-
-    .photos {
-        padding: 20px;
-    }
+.photos img:hover {
+    transform: scale(1.05); /* Zoom subtil au survol */
 }
 
-/* Pied de page */
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 60px;
+    padding: 10px;
+    background-color: #333;
+    color: #e5e5e5;
     font-family: 'UnifrakturCook', cursive;
-    font-size: 1.2em;
-    color: #d8c9a6;
-    text-shadow: 1px 1px #000;
+    margin-top: 20px;
 }
